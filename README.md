@@ -3,6 +3,9 @@ chat app using firebase and react
 
 ![screen](./screenshots/screen.png)
 
+## demo
+[https://chat.kijmoshi.xyz](https://chat.kijmoshi.xyz)
+
 ## install
 ``` sh
 git clone https://github.com/real-kijmoshi/Firebase-chat

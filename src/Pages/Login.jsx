@@ -1,4 +1,5 @@
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
+
 
 export default function Login({ auth }) {
   const signInWithGoogle = () => {
@@ -6,8 +7,15 @@ export default function Login({ auth }) {
     signInWithPopup(auth, provider);
   };
 
+  const signInWithGithub = () => {
+    const provider = new GithubAuthProvider();
+    signInWithPopup(auth, provider);
+  };
+
   return (
     <div className="grid h-screen place-items-center">
+      <div>
+        
       <button
         onClick={signInWithGoogle}
         className="flex h-fit w-fit no-wrap bg-white p-3 rounded shadow hover:bg-gray-100"
@@ -19,6 +27,19 @@ export default function Login({ auth }) {
         />
         <p className="mx-2 text-black">Sign in with Google</p>
       </button>
+
+      <button
+        onClick={signInWithGithub}
+        className="flex h-fit w-fit no-wrap bg-black p-3 rounded shadow hover:bg-[#141414] mt-5"
+      >
+        <img
+          className="w-5"
+          src="http://localhost:5173/public/github-mark-white.svg"
+          alt=""
+        />
+        <p className="mx-2 text-white">Sign in with Github</p>
+      </button>
+      </div>
     </div>
   );
 }
