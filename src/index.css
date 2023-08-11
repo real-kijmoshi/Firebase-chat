@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme: #2d2d2d;
+  --theme-text: #fff;
+}
+
+body {
+  background-color: var(--theme);
+  color: var(--theme-text);
+  font-family: "Roboto", sans-serif;
+}
+
+@layer utilities {
+  .chat-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: var(--theme) var(--theme);
+  }
+
+  .sent {
+    flex-direction: row-reverse;
+    float: right;
+  }
+
+  .sent .content {
+    background-color: #2d2d2d;
+    color: #fff;
+  }
+}
