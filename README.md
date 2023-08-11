@@ -18,11 +18,11 @@ vite
 ```
 
 ## todo
-- [x] Add more authentication methods
-- [x] add Loadmore functionality
-- [x] create api for chatbots
-- [x] add bad words filter
-- [x] make banning users possible
+- [ ] Add more authentication methods
+- [ ] add Loadmore functionality
+- [ ] create api for chatbots
+- [ ] add bad words filter
+- [ ] make banning users possible
 
 ## license
 licensed under the [MIT License](./LICENSE) 
