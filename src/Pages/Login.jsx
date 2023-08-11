@@ -2,6 +2,7 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   GithubAuthProvider,
+  signInAnonymously
 } from "firebase/auth";
 
 export default function Login({ auth }) {
@@ -37,6 +38,15 @@ export default function Login({ auth }) {
           <img className="w-5" src="/github-mark-white.svg" alt="" />
           <p className="mx-2 text-white">Sign in with Github</p>
         </button>
+
+        <div>
+          <button
+            onClick={() => signInAnonymously(auth)}
+            className="flex h-fit w-fit no-wrap bg-gray-700 p-3 rounded shadow hover:bg-gray-800 mt-5"
+          >
+            <p className="mx-2 text-white">Sign in Anonymously</p>
+          </button>
+        </div>
       </div>
     </div>
   );

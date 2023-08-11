@@ -51,8 +51,6 @@ export default function Chat({ auth, db }) {
     bottom.current?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
-
-
   bottom.current?.scrollIntoView({ behavior: "smooth" });
 
   return (

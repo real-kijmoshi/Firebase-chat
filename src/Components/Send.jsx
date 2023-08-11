@@ -10,6 +10,8 @@ export default function Home({ db, auth, bottom }) {
     if (message.length === 0) return alert("Message is empty");
     if (message.length > 1000) return alert("Message is too long");
 
+    if(!user.photoURL) user.photoURL = "http://upload.wikimedia.org/wikipedia/commons/4/44/Cow-IMG_2050.JPG"
+
     addDoc(collection(db, "messages"), {
       content: message,
       photo: user.photoURL,
