@@ -5,9 +5,9 @@ chat app using firebase and react
 
 ## install
 ``` sh
-git clone 
+git clone https://github.com/real-kijmoshi/Firebase-chat
 
-cd chat-app
+cd Firebase-chat
 
 yarn install
 ```
